@@ -36,6 +36,7 @@ function AddressList({
                   >
                     {Object.entries(myAddresses.get(selectedCep) ?? {})
                       .filter(item => item[1])
+                      .sort()
                       .map((item, idx: number) => (
                         <div
                           key={item[0]}

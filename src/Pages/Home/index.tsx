@@ -47,7 +47,7 @@ function Home() {
   }, [response]);
 
   useEffect(() => {
-    setCepData(emptyAdres);
+    setCepData({ ...emptyAdres, cep: cepInput });
   }, [error]);
 
   useEffect(() => {
