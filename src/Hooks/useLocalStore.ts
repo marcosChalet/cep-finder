@@ -26,11 +26,6 @@ function useLocalSore(
     } catch (error) {
       console.log(error);
     }
-
-    const addresses: AddressMapType = new Map(
-      JSON.parse(localStorage.getItem('@AGSistemasAddressProject') ?? ''),
-    );
-    setMyAddresses(addresses);
   }, []);
 
   useEffect(() => {
